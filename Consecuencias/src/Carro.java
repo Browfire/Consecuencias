@@ -2,7 +2,7 @@
 public class Carro {
 	
 	// Atributos
-    private int cantidadOcupantes =0;
+    private int cantidadOcupantes;
     private String fechaIngreso;
     private int ubicacionFila;
     private int ubicacionColumna;

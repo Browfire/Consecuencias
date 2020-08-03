@@ -9,7 +9,6 @@ public class Tablero {
 	
 	// Constructor
 	public Tablero() {
-		
 	}
 
 	// Getters & Setters
@@ -31,12 +30,18 @@ public class Tablero {
 	
 	// Métodos
 	public void crearCarro() {
-		// Se deben crear 3 objetos tipo Kromi
-		crearKromi();
-		// Se deben crear 5 objetos tipo Caguano
-		crearCaguano();
-		// Se deben crear 10 objetos tipo Trupalla
-		crearTrupalla();
+		// Crea 3 objetos de tipo Kromi
+		for(byte k = 0; k<3; k++) {
+			crearKromi();
+		}
+		// Crea 5 objetos de tipo Caguano
+		for(byte c = 0; c<5; c++) {
+			crearCaguano();
+		}
+		// Crea 10 objetos de tipo Trupalla
+		for(short t = 0; t<10; t++) {
+			crearTrupalla();
+		}
 	}
 	
 	public boolean lanzarHuevo() {
@@ -50,10 +55,10 @@ public class Tablero {
 	
 	private void crearKromi() {
 		// Obtenemos una coordenada aleatoria
-		int coordX = randomNumber();
-		int coordY = randomNumber();
+		int posFila = randomNumber();
+		int posColumna = randomNumber();
 		// Validamos si hay espacio en la matriz
-		validarKromi(coordX,coordY);
+		validarKromi(posFila,posColumna);
 		/*
 		 * Una vez validado, se debe crear el objeto y guardarlo
 		 */
@@ -61,10 +66,10 @@ public class Tablero {
 	
 	private void crearCaguano() {
 		// Obtenemos una coordenada aleatoria
-		int coordX = randomNumber();
-		int coordY = randomNumber();
+		int posFila = randomNumber();
+		int posColumna = randomNumber();
 		// Validamos si hay espacio en la matriz
-		validarCaguano(coordX,coordY);
+		validarCaguano(posFila,posColumna);
 		/*
 		 * Una vez validado, se debe crear el objeto y guardarlo
 		 */
@@ -72,10 +77,10 @@ public class Tablero {
 	
 	private void crearTrupalla() {
 		// Obtenemos una coordenada aleatoria
-		int coordX = randomNumber();
-		int coordY = randomNumber();
+		int posFila = randomNumber();
+		int posColumna = randomNumber();
 		// Validamos si hay espacio en la matriz
-		validarTrupalla(coordX,coordY);
+		validarTrupalla(posFila,posColumna);
 		/*
 		 * Una vez validado, se debe crear el objeto y guardarlo
 		 */
@@ -88,15 +93,15 @@ public class Tablero {
 		return 0;
 	}
 	
-	private boolean validarKromi(int coordX, int coordY) {
+	private boolean validarKromi(int posFila, int posColumna) {
 		
 		boolean espacioLibre = false;	// True si el espacio está disponible
 		
 		// Verifica que el objeto no salga de la matriz
-		if(coordX+2 < 15 && coordY < 15) {
+		if(posFila+2 < 15 && posColumna < 15) {
 			// Verifica que el objeto tenga espacio disponible
 			for(int i=0; i<3; i++) {
-				if(tablero[coordX+i][coordY] != '\u0000') {
+				if(tablero[posFila+i][posColumna] != '\u0000') {
 					espacioLibre = false;
 					break;
 				}else {
@@ -108,15 +113,15 @@ public class Tablero {
 		return espacioLibre;
 	}
 	
-	private boolean validarCaguano(int coordX, int coordY) {
+	private boolean validarCaguano(int posFila, int posColumna) {
 		
 		boolean espacioLibre = false;	// True si el espacio está disponible
 		
 		// Verifica que el objeto no salga de la matriz
-		if(coordX < 15 && coordY+1 < 15) {
+		if(posFila < 15 && posColumna+1 < 15) {
 			// Verifica que el objeto tenga espacio disponible
 			for(int i=0; i<2; i++) {
-				if(tablero[coordX][coordY+i] != '\u0000') {
+				if(tablero[posFila][posColumna+i] != '\u0000') {
 					espacioLibre = false;
 					break;
 				}else {
@@ -128,14 +133,14 @@ public class Tablero {
 		return espacioLibre;
 	}
 	
-	private boolean validarTrupalla(int coordX, int coordY) {
+	private boolean validarTrupalla(int posFila, int posColumna) {
 		
 		boolean espacioLibre = false;	// True si el espacio está disponible
 		
 		// Verifica que el objeto no salga de la matriz
-		if(coordX < 15 && coordY < 15) {
+		if(posFila < 15 && posColumna < 15) {
 			// Verifica que el objeto tenga espacio disponible
-			if(tablero[coordX][coordY] != '\u0000') {
+			if(tablero[posFila][posColumna] != '\u0000') {
 				espacioLibre = false;
 			}else {
 				espacioLibre = true;

@@ -2,7 +2,7 @@
 public class Trupalla extends Carro {
 	
 	// Atributos
-    private int nivelArmadura = 0;
+    private int nivelArmadura;
     private String nombreConductor;
     
     // Constructor
