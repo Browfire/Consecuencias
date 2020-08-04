@@ -9,8 +9,8 @@ public class Caguano extends Carro {
     public Caguano() {
     }
 
-    public Caguano(int cantidadOcupantes, String fechaIngreso, int ubicacionFila, int ubicacionColumna, int numeroImpactos, int espacios, int alcanceTiro, String colorConfeti) {
-        super(cantidadOcupantes, fechaIngreso, ubicacionFila, ubicacionColumna, numeroImpactos, espacios);
+    public Caguano(int cantidadOcupantes, String fechaIngreso, int ubicacionFila, int ubicacionColumna, int alcanceTiro, String colorConfeti) {
+        super(cantidadOcupantes, fechaIngreso, ubicacionFila, ubicacionColumna, 2);
         this.alcanceTiro = alcanceTiro;
         this.colorConfeti = colorConfeti;
     }

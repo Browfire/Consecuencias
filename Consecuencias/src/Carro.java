@@ -13,12 +13,12 @@ public class Carro {
     public Carro() {
     }
 
-    public Carro(int cantidadOcupantes, String fechaIngreso, int ubicacionFila, int ubicacionColumna, int numeroImpactos, int espacios) {
+    public Carro(int cantidadOcupantes, String fechaIngreso, int ubicacionFila, int ubicacionColumna, int espacios) {
         this.cantidadOcupantes = cantidadOcupantes;
         this.fechaIngreso = fechaIngreso;
         this.ubicacionFila = ubicacionFila;
         this.ubicacionColumna = ubicacionColumna;
-        this.numeroImpactos = numeroImpactos;
+        this.numeroImpactos = 0;
         this.espacios = espacios;
     }
     

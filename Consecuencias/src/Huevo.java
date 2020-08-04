@@ -2,26 +2,26 @@
 public class Huevo {
 	
 	// Atributos
-	public String fila;
-	public String columna;
+	private int fila;
+	private int columna;
 	private int puntajeObtenido;
 	
 	// Constructor
 	public Huevo() {
 	}
 
-	public Huevo(String fila, String columna, int puntajeObtenido) {
+	public Huevo(int fila, int columna, int puntajeObtenido) {
 		this.fila = fila;
 		this.columna = columna;
 		this.puntajeObtenido = puntajeObtenido;
 	}
 
 	// Getters & Setters
-	public String getFila() {
+	public int getFila() {
 		return fila;
 	}
 
-	public String getColumna() {
+	public int getColumna() {
 		return columna;
 	}
 
@@ -29,11 +29,11 @@ public class Huevo {
 		return puntajeObtenido;
 	}
 
-	public void setFila(String fila) {
+	public void setFila(int fila) {
 		this.fila = fila;
 	}
 
-	public void setColumna(String columna) {
+	public void setColumna(int columna) {
 		this.columna = columna;
 	}
 

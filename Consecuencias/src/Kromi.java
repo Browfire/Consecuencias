@@ -2,7 +2,7 @@
 public class Kromi extends Carro{
 
 	// Atributos
-    private int fechaFabricacion;
+    private int anioFabricacion;
     private String marca;
     
     
@@ -10,19 +10,19 @@ public class Kromi extends Carro{
     public Kromi() {
     }
 
-    public Kromi(int cantidadOcupantes, String fechaIngreso, int ubicacionFila, int ubicacionColumna,  int numeroImpactos, int espacios, int fechaFabricacion, String marca) {
-        super(cantidadOcupantes, fechaIngreso, ubicacionFila, ubicacionColumna, numeroImpactos, espacios);
-        this.fechaFabricacion = fechaFabricacion;
+    public Kromi(int cantidadOcupantes, String fechaIngreso, int ubicacionFila, int ubicacionColumna, int anioFabricacion, String marca) {
+        super(cantidadOcupantes, fechaIngreso, ubicacionFila, ubicacionColumna, 3);
+        this.anioFabricacion = anioFabricacion;
         this.marca = marca;
     }
 
     // Getters & Setters
-    public int getFechaFabricacion() {
-        return fechaFabricacion;
+    public int getAnioFabricacion() {
+        return anioFabricacion;
     }
 
-    public void setFechaFabricacion(int fechaFabricacion) {
-        this.fechaFabricacion = fechaFabricacion;
+    public void setAnioFabricacion(int anioFabricacion) {
+        this.anioFabricacion = anioFabricacion;
     }
 
     public String getMarca() {
@@ -36,7 +36,7 @@ public class Kromi extends Carro{
     @Override
     public String toString() {
         return "Kromi{" +
-                "FechaFabricacion=" + fechaFabricacion +
+                "AñoFabricacion=" + anioFabricacion +
                 ", Marca='" + marca + '\'' +
                 '}';
     }
