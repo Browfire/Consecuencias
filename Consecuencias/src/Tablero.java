@@ -49,8 +49,19 @@ public class Tablero {
 		return false;
 	}
 	
-	public int calcularPuntaje() {
-		return 0;
+	public void calcularPuntaje() {
+		
+	}
+	
+	public int puntajeTotal() {
+		// Obtiene la suma de los puntajes almacenados en listaHuevos 
+        int puntosTotales = 0;
+        
+        puntosTotales = listaHuevos.stream()
+                .mapToInt(o -> o.getPuntajeObtenido())
+                .sum();
+
+        return puntosTotales;
 	}
 	
 	private void crearKromi() {
@@ -69,7 +80,7 @@ public class Tablero {
 		int posFila = randomNumber();
 		int posColumna = randomNumber();
 		// Validamos si hay espacio en la matriz
-		validarCaguano(posFila,posColumna);
+		validarCaguano(posFila,posColumna); 
 		/*
 		 * Una vez validado, se debe crear el objeto y guardarlo
 		 */
@@ -87,10 +98,10 @@ public class Tablero {
 	}
 	
 	private int randomNumber() {
-		/*
-		 *  Método que retorna un número entero aleatorio entre 0 y 14
-		 */
-		return 0;
+		// Método que retorna un número entero aleatorio entre 0 y 14
+		int a = (int) (Math.random()*14 + 1);
+
+		return a;
 	}
 	
 	private boolean validarKromi(int posFila, int posColumna) {

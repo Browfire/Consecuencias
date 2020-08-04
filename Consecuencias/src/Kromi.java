@@ -5,12 +5,13 @@ public class Kromi extends Carro{
     private int fechaFabricacion;
     private String marca;
     
+    
     // Constructor
     public Kromi() {
     }
 
-    public Kromi(int cantidadOcupantes, String fechaIngreso, int ubicacionFila, int ubicacionColumna, int fechaFabricacion, String marca) {
-        super(cantidadOcupantes, fechaIngreso, ubicacionFila, ubicacionColumna);
+    public Kromi(int cantidadOcupantes, String fechaIngreso, int ubicacionFila, int ubicacionColumna,  int numeroImpactos, int espacios, int fechaFabricacion, String marca) {
+        super(cantidadOcupantes, fechaIngreso, ubicacionFila, ubicacionColumna, numeroImpactos, espacios);
         this.fechaFabricacion = fechaFabricacion;
         this.marca = marca;
     }

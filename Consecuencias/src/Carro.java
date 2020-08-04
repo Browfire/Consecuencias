@@ -6,16 +6,20 @@ public class Carro {
     private String fechaIngreso;
     private int ubicacionFila;
     private int ubicacionColumna;
+    private int numeroImpactos;
+    private int espacios;
 
     // Constructor
     public Carro() {
     }
 
-    public Carro(int cantidadOcupantes, String fechaIngreso, int ubicacionFila, int ubicacionColumna) {
+    public Carro(int cantidadOcupantes, String fechaIngreso, int ubicacionFila, int ubicacionColumna, int numeroImpactos, int espacios) {
         this.cantidadOcupantes = cantidadOcupantes;
         this.fechaIngreso = fechaIngreso;
         this.ubicacionFila = ubicacionFila;
         this.ubicacionColumna = ubicacionColumna;
+        this.numeroImpactos = numeroImpactos;
+        this.espacios = espacios;
     }
     
     // Getters & Setters
@@ -50,7 +54,23 @@ public class Carro {
     public void setUbicacionColumna(int ubicacionColumna) {
         this.ubicacionColumna = ubicacionColumna;
     }
+    
+    public int getNumeroImpactos() {
+        return numeroImpactos;
+    }
 
+    public void setNumeroImpactos(int numeroImpactos) {
+        this.numeroImpactos = numeroImpactos;
+    }
+    
+    public int getEspacios() {
+        return espacios;
+    }
+
+    public void setEspacios(int espacios) {
+        this.espacios = espacios;
+    }
+    
     @Override
     public String toString() {
         return "Carro{" +
