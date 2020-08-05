@@ -2,39 +2,39 @@
 public class Huevo {
 	
 	// Atributos
-	private int fila;
-	private int columna;
+	private int posFila;
+	private int posColumna;
 	private int puntajeObtenido;
 	
 	// Constructor
 	public Huevo() {
 	}
 
-	public Huevo(int fila, int columna, int puntajeObtenido) {
-		this.fila = fila;
-		this.columna = columna;
+	public Huevo(int posFila, int posColumna, int puntajeObtenido) {
+		this.posFila = posFila;
+		this.posColumna = posColumna;
 		this.puntajeObtenido = puntajeObtenido;
 	}
 
 	// Getters & Setters
 	public int getFila() {
-		return fila;
+		return posFila;
 	}
 
 	public int getColumna() {
-		return columna;
+		return posColumna;
 	}
 
 	public int getPuntajeObtenido() {
 		return puntajeObtenido;
 	}
 
-	public void setFila(int fila) {
-		this.fila = fila;
+	public void setFila(int posFila) {
+		this.posFila = posFila;
 	}
 
-	public void setColumna(int columna) {
-		this.columna = columna;
+	public void setColumna(int posColumna) {
+		this.posColumna = posColumna;
 	}
 
 	public void setPuntajeObtenido(int puntajeObtenido) {
@@ -43,7 +43,7 @@ public class Huevo {
 
 	@Override
 	public String toString() {
-		return "Huevo [fila=" + fila + ", columna=" + columna + ", puntajeObtenido=" + puntajeObtenido + "]";
+		return "Huevo [posFila=" + posFila + ", posColumna=" + posColumna + ", puntajeObtenido=" + puntajeObtenido + "]";
 	}
 
 }

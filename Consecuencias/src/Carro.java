@@ -4,8 +4,8 @@ public class Carro {
 	// Atributos
     private int cantidadOcupantes;
     private String fechaIngreso;
-    private int ubicacionFila;
-    private int ubicacionColumna;
+    private int posFila;
+    private int posColumna;
     private int numeroImpactos;
     private int espacios;
 
@@ -13,11 +13,11 @@ public class Carro {
     public Carro() {
     }
 
-    public Carro(int cantidadOcupantes, String fechaIngreso, int ubicacionFila, int ubicacionColumna, int espacios) {
+    public Carro(int cantidadOcupantes, String fechaIngreso, int posFila, int posColumna, int espacios) {
         this.cantidadOcupantes = cantidadOcupantes;
         this.fechaIngreso = fechaIngreso;
-        this.ubicacionFila = ubicacionFila;
-        this.ubicacionColumna = ubicacionColumna;
+        this.posFila = posFila;
+        this.posColumna = posColumna;
         this.numeroImpactos = 0;
         this.espacios = espacios;
     }
@@ -39,20 +39,20 @@ public class Carro {
         this.fechaIngreso = fechaIngreso;
     }
 
-    public int getUbicacionFila() {
-        return ubicacionFila;
+    public int getposFila() {
+        return posFila;
     }
 
-    public void setUbicacionFila(int ubicacionFila) {
-        this.ubicacionFila = ubicacionFila;
+    public void setposFila(int posFila) {
+        this.posFila = posFila;
     }
 
-    public int getUbicacionColumna() {
-        return ubicacionColumna;
+    public int getposColumna() {
+        return posColumna;
     }
 
-    public void setUbicacionColumna(int ubicacionColumna) {
-        this.ubicacionColumna = ubicacionColumna;
+    public void setposColumna(int posColumna) {
+        this.posColumna = posColumna;
     }
     
     public int getNumeroImpactos() {
@@ -76,15 +76,15 @@ public class Carro {
         return "Carro{" +
                 "CantidadOcupantes=" + cantidadOcupantes +
                 ", FechaIngreso='" + fechaIngreso + '\'' +
-                ", UbicacionFila=" + ubicacionFila +
-                ", UbicacionColumna=" + ubicacionColumna +
+                ", posFila=" + posFila +
+                ", posColumna=" + posColumna +
                 '}';
     }
 
    public void DesplegarDatos(){
         System.out.println("La cantidad de ocupantes es: "+getCantidadOcupantes());
         System.out.println("Fecha de Ingreso: "+getFechaIngreso());
-        System.out.println("Las Cordenadas son: "+getUbicacionFila()+","+getUbicacionColumna());
+        System.out.println("Las Cordenadas son: "+getposFila()+","+getposColumna());
     }
    
 }
