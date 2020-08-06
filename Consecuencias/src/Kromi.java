@@ -1,11 +1,10 @@
+public class Kromi extends Carro {
 
-public class Kromi extends Carro{
-
-	// Atributos
+    // Atributos
     private int anioFabricacion;
     private String marca;
-    
-    
+
+
     // Constructor
     public Kromi() {
     }

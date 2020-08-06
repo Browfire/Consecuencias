@@ -1,49 +1,48 @@
-
 public class Huevo {
-	
-	// Atributos
-	private int posFila;
-	private int posColumna;
-	private int puntajeObtenido;
-	
-	// Constructor
-	public Huevo() {
-	}
 
-	public Huevo(int posFila, int posColumna, int puntajeObtenido) {
-		this.posFila = posFila;
-		this.posColumna = posColumna;
-		this.puntajeObtenido = puntajeObtenido;
-	}
+    // Atributos
+    private int posFila;
+    private int posColumna;
+    private int puntajeObtenido;
 
-	// Getters & Setters
-	public int getFila() {
-		return posFila;
-	}
+    // Constructor
+    public Huevo() {
+    }
 
-	public int getColumna() {
-		return posColumna;
-	}
+    public Huevo(int posFila, int posColumna, int puntajeObtenido) {
+        this.posFila = posFila;
+        this.posColumna = posColumna;
+        this.puntajeObtenido = puntajeObtenido;
+    }
 
-	public int getPuntajeObtenido() {
-		return puntajeObtenido;
-	}
+    // Getters & Setters
+    public int getFila() {
+        return posFila;
+    }
 
-	public void setFila(int posFila) {
-		this.posFila = posFila;
-	}
+    public int getColumna() {
+        return posColumna;
+    }
 
-	public void setColumna(int posColumna) {
-		this.posColumna = posColumna;
-	}
+    public int getPuntajeObtenido() {
+        return puntajeObtenido;
+    }
 
-	public void setPuntajeObtenido(int puntajeObtenido) {
-		this.puntajeObtenido = puntajeObtenido;
-	}
+    public void setFila(int posFila) {
+        this.posFila = posFila;
+    }
 
-	@Override
-	public String toString() {
-		return "Huevo [posFila=" + posFila + ", posColumna=" + posColumna + ", puntajeObtenido=" + puntajeObtenido + "]";
-	}
+    public void setColumna(int posColumna) {
+        this.posColumna = posColumna;
+    }
+
+    public void setPuntajeObtenido(int puntajeObtenido) {
+        this.puntajeObtenido = puntajeObtenido;
+    }
+
+    @Override
+    public String toString() {
+        return "Huevo [posFila=" + posFila + ", posColumna=" + posColumna + ", puntajeObtenido=" + puntajeObtenido + "]";
+    }
 
 }

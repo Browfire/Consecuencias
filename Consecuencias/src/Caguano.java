@@ -1,10 +1,9 @@
-
 public class Caguano extends Carro {
 
-	// Atributos
+    // Atributos
     private int alcanceTiro;
     private String colorConfeti;
-    
+
     // Constructor
     public Caguano() {
     }

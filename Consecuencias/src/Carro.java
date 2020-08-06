@@ -1,7 +1,6 @@
-
 public class Carro {
-	
-	// Atributos
+
+    // Atributos
     private int cantidadOcupantes;
     private String fechaIngreso;
     private int posFila;
@@ -21,7 +20,7 @@ public class Carro {
         this.numeroImpactos = 0;
         this.espacios = espacios;
     }
-    
+
     // Getters & Setters
     public int getCantidadOcupantes() {
         return cantidadOcupantes;
@@ -54,7 +53,7 @@ public class Carro {
     public void setposColumna(int posColumna) {
         this.posColumna = posColumna;
     }
-    
+
     public int getNumeroImpactos() {
         return numeroImpactos;
     }
@@ -62,7 +61,7 @@ public class Carro {
     public void setNumeroImpactos(int numeroImpactos) {
         this.numeroImpactos = numeroImpactos;
     }
-    
+
     public int getEspacios() {
         return espacios;
     }
@@ -70,7 +69,7 @@ public class Carro {
     public void setEspacios(int espacios) {
         this.espacios = espacios;
     }
-    
+
     @Override
     public String toString() {
         return "Carro{" +
@@ -81,10 +80,10 @@ public class Carro {
                 '}';
     }
 
-   public void DesplegarDatos(){
-        System.out.println("La cantidad de ocupantes es: "+getCantidadOcupantes());
-        System.out.println("Fecha de Ingreso: "+getFechaIngreso());
-        System.out.println("Las Cordenadas son: "+getposFila()+","+getposColumna());
+    public void DesplegarDatos() {
+        System.out.println("La cantidad de ocupantes es: " + getCantidadOcupantes());
+        System.out.println("Fecha de Ingreso: " + getFechaIngreso());
+        System.out.println("Las Cordenadas son: " + getposFila() + "," + getposColumna());
     }
-   
+
 }

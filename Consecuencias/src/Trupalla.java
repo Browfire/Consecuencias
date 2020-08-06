@@ -1,10 +1,9 @@
-
 public class Trupalla extends Carro {
-	
-	// Atributos
+
+    // Atributos
     private int nivelArmadura;
     private String nombreConductor;
-    
+
     // Constructor
     public Trupalla() {
     }
@@ -14,7 +13,7 @@ public class Trupalla extends Carro {
         this.nivelArmadura = nivelArmadura;
         this.nombreConductor = nombreConductor;
     }
-    
+
     // Getters & Setters
     public int getnivelArmadura() {
         return nivelArmadura;
